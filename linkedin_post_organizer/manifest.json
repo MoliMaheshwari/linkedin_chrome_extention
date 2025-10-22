@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Post Organizer",
+  "version": "1.0",
+  "description": "Save, tag, and organize LinkedIn posts for future reference.",
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting",
+    "activeTab"
+  ],
+
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "https://web-production-6d5d1.up.railway.app/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": ["dashboard.html", "dashboard.js", "styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

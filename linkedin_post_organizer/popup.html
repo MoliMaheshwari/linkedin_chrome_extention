@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkedIn Post Organizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>Saved Posts</h2>
+
+  <!-- Folder filter dropdown -->
+  <select id="folderFilter">
+    <option value="__all__">All Folders</option>
+  </select>
+
+  <!-- Search bar -->
+  <input type="text" id="searchInput" placeholder="Search posts...">
+
+  <!-- Active tag filter info -->
+  <div id="activeFilter" style="display: none;">
+    <strong>Filtering by tag:</strong> <span id="filterTag"></span>
+    <button id="clearFilterBtn">✕</button>
+  </div>
+
+  <!-- Container for saved posts -->
+  <div id="postsContainer"></div>
+
+  <hr>
+
+  <!-- Tag & folder inputs for saving a post -->
+  <input type="text" id="tagsInput" placeholder="Enter tags (comma-separated)">
+ 
+   <div id="suggestedTagsContainer" style="margin-top: 5px;"></div>
+
+
+  <input type="text" id="folderInput" placeholder="Enter folder (optional)">
+
+  <button id="savePostBtn">+ Save Current Post</button>
+  <button id="openDashboardBtn">&#128269; Open Dashboard</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+

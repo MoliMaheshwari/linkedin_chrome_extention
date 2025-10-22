@@ -1,0 +1,261 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  width: 300px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+h2 {
+  margin-top: 0;
+  color: #0073b1;
+  text-align: center;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+#tagsInput, #folderInput, #searchInput, #folderFilter {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+button {
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #005f8d;
+}
+
+.post {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-author {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.post-content {
+  font-size: 13px;
+  margin: 8px 0;
+  color: #444;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  color: #c0392b;
+}
+
+.tag-list {
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e1ecf4;
+  color: #39739d;
+  font-size: 12px;
+  border-radius: 12px;
+  padding: 2px 8px;
+  margin: 2px 4px 2px 0;
+}
+
+.post-link {
+  font-size: 12px;
+  color: #0073b1;
+  text-decoration: none;
+}
+
+#activeFilter {
+  background-color: #fce4ec;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+#activeFilter button {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+#folderFilter {
+  width: 100%;
+}
+
+.post-folder {
+  font-size: 12px;
+  margin: 4px 0;
+  color: #555;
+}
+
+/* === Dark Mode Styles === */
+body.dark-mode .post {
+  background-color: #2a2a2a;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+  background-color: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+body.dark-mode button {
+  background-color: #0077cc;
+  color: white;
+}
+
+body.dark-mode .tag {
+  background-color: #555;
+  color: #eee;
+}
+
+body.dark-mode a {
+  color: #8ecfff;
+}
+
+body.dark-mode #postsContainer {
+  background-color: transparent;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.post-author {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+
+#suggestedTags {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.suggested-tag {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.suggested-tag:hover {
+  background-color: #cde3ea;
+}
+
+body.dark-mode .suggested-tag {
+  background-color: #355a64;
+  color: #e1f5fe;
+  border-color: #406c76;
+}
+
+body.dark-mode .suggested-tag:hover {
+  background-color: #41717d;
+}
+
+.suggested-tags-box {
+  margin-top: 5px;
+}
+.suggested-tag {
+  display: inline-block;
+  background: #eee;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.suggested-tag {
+  display: inline-block;
+  background: #eee;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin: 3px;
+  cursor: pointer;
+}
+.suggested-tag:hover {
+  background: #d4f0ff;
+}
+
+
+
+
